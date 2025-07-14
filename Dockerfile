@@ -16,5 +16,5 @@ RUN ./mvnw clean install -DskipTests
 # Expose port
 EXPOSE 8084
 
-# Run the app
-CMD ["java", "-jar", "target/*.jar"]
+# Run the app using exact JAR name
+CMD ["java", "-jar", "target/analytics-service-0.0.1-SNAPSHOT.jar"]
